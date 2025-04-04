@@ -1,0 +1,26 @@
+{
+  "name": "PixelMapper",
+  "version": "1.0.0",
+  "description": "Convert image to object",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon -r dotenv/config ."
+  },
+  "author": "Roscom",
+  "license": "MIT",
+  "dependencies": {
+    "@grammyjs/commands": "^1.0.5",
+    "@grammyjs/conversations": "^2.0.1",
+    "@grammyjs/files": "^1.1.1",
+    "@grammyjs/stateless-question": "^4.0.0",
+    "axios": "^1.8.4",
+    "canvas": "^3.1.0",
+    "grammy": "^1.35.1",
+    "jimp": "^1.6.0",
+    "sharp": "^0.34.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7"
+  }
+}
