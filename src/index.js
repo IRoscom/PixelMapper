@@ -1,23 +1,20 @@
 const { Bot, InputFile } = require("grammy");
-const { hydrateFiles } = require("@grammyjs/files");
 const commands = require("./commands/index");
-const { readFileSync, read } = require("fs");
+const { readFileSync } = require("fs");
 const resizeImage = require("./services/resizeImage");
 const convertImageToObject = require("./services/convertImageToObject");
 const convertObjectToImage = require("./services/convertObjectToImage");
 const isValidNonEmptyJSONString = require("./utils/isValidNonEmptyJSONString");
+const getFile = require("./services/getFile");
 
 const bot = new Bot(process.env.Token);
-
-bot.api.config.use(hydrateFiles(bot.token));
 commands(bot);
 
 bot.on(["message:photo", "message:document"], async (ctx) => {
   const file = await ctx.getFile();
   if (ctx.message?.document && ctx.message.document.mime_type !== "text/plain")
     return ctx.reply("Файл не является текстовым");
-  const path = await file.download();
-  const readFile = readFileSync(path);
+  const readFile = await getFile(bot.token, file.file_path);
   if (ctx.message?.photo) {
     const resize = await resizeImage(readFile);
     const pixelData = await convertImageToObject(resize);

@@ -14,21 +14,6 @@
   resolved "https://registry.yarnpkg.com/@grammyjs/commands/-/commands-1.0.5.tgz#45ea41849c54976233a7f56be4fbacfe03ff74da"
   integrity sha512-7CiI63Ye5ysdqhwQV7cEFZGQOWJLDPJSoOAeIqI+SXIlwvTjqSRSlTG2e4OfhgF2t/3G3OdC5bPrZb7oQkYfBw==
 
-"@grammyjs/conversations@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@grammyjs/conversations/-/conversations-2.0.1.tgz#7633078d4350c370103d1289e2e093fce92caac0"
-  integrity sha512-wpOXa4do03JeTVbv42CqsiWRczycey/58mccQekprhNZzJb/GL+/xSx0CSIDoaHm7x2MeGgtmBbpu9tGZQkqng==
-
-"@grammyjs/files@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@grammyjs/files/-/files-1.1.1.tgz#f030f6d6b4da945aa4c1a8ff469585492ba6bcbc"
-  integrity sha512-T3vJCVlj76I8d4BUI0MPDyIkfWOkG4NXyy8HDKAmG5tIb1SxMtrQHcwRYCOHeSJ1EvLWtfadFNTbRXuym+8c6Q==
-
-"@grammyjs/stateless-question@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@grammyjs/stateless-question/-/stateless-question-4.0.0.tgz#f5afd283e415add0f0624609c362b4ca6a702564"
-  integrity sha512-qxudqvZZ0P+bn5Zg2A6dMkoDbwgfINcANA3HfsJPJeJwzv9PsSYqjD7dQkyCW23rP3mqxnkirW/t4dwnyOuPyA==
-
 "@grammyjs/types@3.19.0":
   version "3.19.0"
   resolved "https://registry.yarnpkg.com/@grammyjs/types/-/types-3.19.0.tgz#7435f34ca607649b98a6d8c76f364b2067da6293"

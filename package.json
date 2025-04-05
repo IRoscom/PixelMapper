@@ -11,9 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "@grammyjs/commands": "^1.0.5",
-    "@grammyjs/conversations": "^2.0.1",
-    "@grammyjs/files": "^1.1.1",
-    "@grammyjs/stateless-question": "^4.0.0",
     "axios": "^1.8.4",
     "canvas": "^3.1.0",
     "grammy": "^1.35.1",
